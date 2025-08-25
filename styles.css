@@ -1,0 +1,18 @@
+:root { --bg:#0b0f14; --card:#121821; --text:#e9eef6; --muted:#9fb0c8; --accent:#3b82f6; --danger:#ef4444; --warn:#f59e0b; --ok:#10b981; }
+*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--text)}
+.app{max-width:900px;margin:0 auto;padding:16px;display:grid;grid-template-rows:auto auto 360px 1fr auto;gap:12px}
+.header h1{font-size:1.4rem;margin:0}
+.composer{display:flex;gap:8px}
+.composer select,.composer input{flex:1;padding:10px;border-radius:10px;border:1px solid #233041;background:#0f141b;color:var(--text)}
+.composer button{padding:10px 14px;border:none;border-radius:10px;background:var(--accent);color:white;font-weight:600}
+.map{height:360px;border-radius:14px;overflow:hidden;border:1px solid #233041}
+.feed h2{margin:8px 0}
+.feed ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.card{background:var(--card);border:1px solid #1e293b;border-radius:14px;padding:10px}
+.meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;color:var(--muted)}
+.badge{padding:3px 8px;border-radius:999px;background:#1f2937;color:#cbd5e1;text-transform:capitalize;font-size:0.8rem}
+.badge.crime{background:rgba(239,68,68,0.1);color:#fecaca;border:1px solid rgba(239,68,68,0.3)}
+.badge.traffic{background:rgba(59,130,246,0.1);color:#bfdbfe;border:1px solid rgba(59,130,246,0.3)}
+.badge.loadshedding{background:rgba(245,158,11,0.1);color:#fde68a;border:1px solid rgba(245,158,11,0.3)}
+.badge.strike{background:rgba(234,88,12,0.1);color:#fdba74;border:1px solid rgba(234,88,12,0.3)}
+.footer{opacity:0.6;text-align:center;padding:8px 0;font-size:0.9rem}
